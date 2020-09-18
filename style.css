@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  min-height: 700px;
+  min-width: 520px;
+  user-select: none;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input,
+.btn-fire,
+.btn-show {
+  padding: 2px;
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+
+.btn-fire,
+.btn-show {
+  padding: 2px 20px;
+  background-color: #ddd;
+  border: 1px solid #000;
+  border-radius: 2px;
+  outline: none;
+}
+
+.btn-fire:hover,
+.btn-show:hover {
+  background-color: #c5c5c5;
+}
+
+.result,
+.progress {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.board {
+  height: 520px;
+  width: 520px;
+  position: relative;
+}
+
+.row-indexes {
+  height: 500px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.col-indexes {
+  width: 500px;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.gameboard {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.gameboard div {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  background-color: #f6f8f9;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
